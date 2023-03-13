@@ -1,0 +1,66 @@
+// DISPLAYING MY NAME ON A JAVA WINDOW ENVIRONMENT
+
+image.pngimport javax.swing.*;
+
+public class Main {
+  public static void main(String[] args) {
+    JFrame frame = new JFrame("My Name");
+    JLabel label = new JLabel("Paul Eric", SwingConstants.CENTER);
+    frame.add(label);
+    frame.setSize(200, 100);
+    frame.setVisible(true);
+  }
+}
+
+// DISPLAYING MY NAME ON JAVA CONSOLE ENVIRONMENT
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Paul Eric");
+  }
+}
+
+
+//  A PRORAM THAT CAN CALCULATE THE RADIUS OF A CIRCLE IN JAVA CONSOLE
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the radius of the circle: ");
+    double radius = scanner.nextDouble();
+    double area = Math.PI * radius * radius;
+    System.out.println("The area of the circle with radius " + radius + " is " + area);
+  }
+}
+
+
+//  A PRORAM THAT CAN CALCULATE THE RADIUS OF A CIRCLE IN PYTHON
+
+
+Enter the radius of the circle: 5
+The area of the circle with radius 5.0 is 78.53981633974483
+
+
+// A PROGRAM THAT CAN CALCULATE THE AREA OF A trapezium IN JAVA CONSOLE
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Enter the length of the top base of the trapezium: ");
+    double topBase = scanner.nextDouble();
+
+    System.out.print("Enter the length of the bottom base of the trapezium: ");
+    double bottomBase = scanner.nextDouble();
+
+    System.out.print("Enter the height of the trapezium: ");
+    double height = scanner.nextDouble();
+
+    double area = ((topBase + bottomBase) * height) / 2;
+    System.out.println("The area of the trapezium is: " + area);
+  }
+}

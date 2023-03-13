@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+        <form name="cal" > 
+            <input type="text" name="cal2"> <br>
+            <input type="button" value="1" onclick="cal.cal2.value+=1">
+            <input type="button" value="2" onclick="cal.cal2.value+=2">
+            <input type="button" value="3" onclick="cal.cal2.value+=3">
+            <input type="button" value="+" onclick="cal.cal2.value+='+'"> 
+            <br>
+            <input type="button" value="4" onclick="cal.cal2.value+=4">
+            <input type="button" value="5" onclick="cal.cal2.value+=5">
+            <input type="button" value="6" onclick="cal.cal2.value+=6">
+            <input type="button" value="-" onclick="cal.cal2.value+='-'"> 
+            <br>
+            <input type="button" value="7" onclick="cal.cal2.value+=7">
+            <input type="button" value="8" onclick="cal.cal2.value+=8">
+            <input type="button" value="9" onclick="cal.cal2.value+=9">
+            <input type="button" value="/" onclick="cal.cal2.value+='/'"> 
+            <br>
+            <input type="button" value="c" onclick="cal.cal2.value=''">
+            <input type="button" value="0" onclick="cal.cal2.value+=0">
+            <input type="button" value="=" onclick="cal.cal2.value=eval(cal.cal2.value)">
+            <input type="button" value="x" onclick="cal.cal2.value+='*'"> 
+            <br>
+
+
+
+
+
+        </form>
+
+    </div>
+
+
+    <script>
+        function sum() {
+            let act=0;
+            b=0;
+            act=cal.cal2.value;
+            b=act.charAt(act.lenght-1);
+            if(b=='+' || b=='-' || b=='/' || b=='*') {
+                cal.cal2.value=act.substring()
+
+
+
+                
+
+
+                
+
+            }
+            
+        }
+    </script>
+</body>
+</html>
